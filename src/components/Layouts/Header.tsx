@@ -1,13 +1,23 @@
+import { useNavigate } from "react-router-dom"
+
 export default function Header() {
+  const navigate = useNavigate()
   return (
-    <div>
-      <image />
+    <div className="main-container">
+      <img src="/painting-logo.svg" alt="logo" />
       <div className="nav-pages">
-        <div className="home">Home</div>
-        <div className="services">Services</div>
-        <div className="our-work">Our Work</div>
-        <div className="about">About</div>
-        <div className="contact">Contact Us</div>
+        <div className="home" onClick={() => navigate("/")}>
+          <p>Home</p>
+        </div>
+        <div className="services" onClick={() => navigate("/services")}>
+          <p>Services</p>
+        </div>
+        <div className="about" onClick={() => navigate("/about")}>
+          <p>About</p>
+        </div>
+        <div className="contact" onClick={() => navigate("/contact")}>
+          <p>Contact Us</p>
+        </div>
       </div>
     </div>
   )
