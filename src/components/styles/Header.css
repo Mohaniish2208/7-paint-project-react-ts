@@ -1,0 +1,6 @@
+@import "variables.css";
+
+.main-container {
+  font-family: var(--theme-head-font);
+  font-weight: var(--theme-head-wgt);
+}
