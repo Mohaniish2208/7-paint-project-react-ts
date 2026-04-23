@@ -1,0 +1,56 @@
+@import "variables.css";
+
+.page-hero-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-image {
+  height: 60dvh;
+  width: 50dvw;
+  display: flex;
+  position: absolute;
+  right: 1rem;
+}
+
+.punch-line-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: min(100%, 50dvw);
+}
+
+.crown {
+  height: 2rem;
+  width: 2rem;
+}
+
+.punch-line {
+  font-family: var(--punch-font);
+  font-weight: 900;
+  font-size: 5rem;
+  background: linear-gradient(135deg, #8a2be2, #ffb703, #ff006e, #00f0ff, #a8ff00, #ff3d57);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: min(100%, 22rem);
+  margin: 0;
+}
+
+.for-you {
+  font-family: var(--punch-font-for-you);
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 500;
+  text-decoration: underline;
+  width: min(100%, 16rem);
+}

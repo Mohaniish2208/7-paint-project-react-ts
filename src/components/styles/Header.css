@@ -1,6 +1,47 @@
 @import "variables.css";
 
 .main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
+  padding-right: 4rem;
+}
+
+.logo {
+  height: 12rem;
+  width: 11rem;
+  animation: glow 3s ease-in-out;
+}
+
+@keyframes glow {
+  from {
+    opacity: 0;
+    transform: scale(0.7) translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+}
+
+.main-container {
   font-family: var(--theme-head-font);
   font-weight: var(--theme-head-wgt);
+}
+
+.home,
+.services,
+.about,
+.contact {
+  cursor: pointer;
 }

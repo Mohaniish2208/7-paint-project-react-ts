@@ -4,6 +4,7 @@ import Contact from "./components/Sections/contact/Contact"
 import Reviews from "./components/Sections/reviews/Reviews"
 import Services from "./components/Sections/services/Services"
 import Header from "./components/Layouts/Header"
+import PageHero from "./components/Layouts/PageHero"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="reviews" element={<Reviews />} />
         <Route path="services" element={<Services />} />
       </Routes>
+      <PageHero />
     </div>
   )
 }
