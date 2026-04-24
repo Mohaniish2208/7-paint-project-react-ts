@@ -6,6 +6,7 @@ import Services from "./components/Sections/services/Services"
 import Header from "./components/Layouts/Header"
 import PageHero from "./components/Layouts/PageHero"
 import FAQs from "./components/Sections/faq/Faqs"
+import Quote from "./components/Quote/Quote"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="faqs" element={<FAQs />} />
         <Route path="reviews" element={<Reviews />} />
         <Route path="services" element={<Services />} />
+        <Route path="quote" element={<Quote />} />
       </Routes>
       <PageHero />
     </div>

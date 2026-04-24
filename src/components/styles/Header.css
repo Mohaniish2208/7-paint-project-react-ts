@@ -9,7 +9,7 @@
 
 .main-container {
   display: flex;
-  background: linear-gradient(135deg, white, rgba(132, 255, 0, 0.5));
+  background: linear-gradient(5deg, white, rgba(132, 255, 0, 0.5));
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +22,18 @@
   justify-content: center;
   gap: 6rem;
   padding-right: 4rem;
+}
+
+.mid-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.quote {
+  font-family: var(--theme-head-font);
+  padding: 0 0.2rem 0 0.2rem;
 }
 
 .logo {
