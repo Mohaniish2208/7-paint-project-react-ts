@@ -1,7 +1,15 @@
 @import "variables.css";
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+}
 
 .main-container {
   display: flex;
+  background: linear-gradient(135deg, white, rgba(132, 255, 0, 0.5));
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -17,8 +25,9 @@
 }
 
 .logo {
-  height: 12rem;
-  width: 11rem;
+  height: 6rem;
+  width: 6rem;
+  margin: 0;
   animation: glow 3s ease-in-out;
 }
 

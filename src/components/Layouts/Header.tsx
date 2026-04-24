@@ -17,6 +17,9 @@ export default function Header() {
         <div className="about" onClick={() => navigate("/about")}>
           <p>About</p>
         </div>
+        <div className="faqs" onClick={() => navigate("/faqs")}>
+          <p>FAQs</p>
+        </div>
         <div className="contact" onClick={() => navigate("/contact")}>
           <p>Contact Us</p>
         </div>
