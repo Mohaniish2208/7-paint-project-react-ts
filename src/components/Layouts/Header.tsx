@@ -26,7 +26,7 @@ export default function Header() {
           </div>
         </div>
         <button className="quote" onClick={() => navigate("/quote")}>
-          Get a free quote
+          Get a free quote {"\u279C"}
         </button>
       </div>
     </div>
