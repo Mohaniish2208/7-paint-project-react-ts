@@ -20,6 +20,7 @@ body {
     ),
     url("/public/hero-page-bg.svg");
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .punch-line-section {
@@ -57,6 +58,7 @@ body {
   justify-content: center;
   align-items: end;
   margin: 0;
+  color: #444;
   font-size: 3rem;
   font-weight: 500;
   text-decoration: underline;
