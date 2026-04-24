@@ -5,11 +5,12 @@
 
 .main-container {
   display: flex;
-  background: linear-gradient(5deg, white, rgba(132, 255, 0, 0.5));
+  background: white;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  border-bottom: 1px solid #eee;
 }
 
 .nav-pages {
@@ -31,6 +32,8 @@
   font-family: var(--theme-head-font);
   padding: 0 2rem;
   border-radius: 2rem;
+  border: transparent;
+  box-shadow: 1rem 1rem 9rem 1rem chocolate;
   transition: 1s ease-in-out;
   font-weight: var(--thick-font8);
 }
@@ -39,6 +42,7 @@
   background: linear-gradient(135deg, red, rgb(83, 35, 83));
   color: antiquewhite;
   font-weight: var(--thick-font8);
+  transform: scale(0.96) translateY(-2px);
 }
 .logo {
   height: 6rem;
