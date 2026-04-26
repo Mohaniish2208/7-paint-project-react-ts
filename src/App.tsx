@@ -10,9 +10,10 @@ import Quote from "./components/Quote/Quote"
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
       <Routes>
+        <Route path="/" element={<PageHero />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="faqs" element={<FAQs />} />
@@ -20,7 +21,6 @@ function App() {
         <Route path="services" element={<Services />} />
         <Route path="quote" element={<Quote />} />
       </Routes>
-      <PageHero />
     </div>
   )
 }
