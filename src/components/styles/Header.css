@@ -11,6 +11,8 @@
   align-items: center;
   margin: 0;
   border-bottom: 1px solid #eee;
+  gap: 1rem;
+  padding-right: 1rem;
 }
 
 .nav-pages {
@@ -30,7 +32,7 @@
 
 .quote {
   font-family: var(--theme-head-font);
-  padding: 0 2rem;
+  padding: 0.75rem 2rem;
   border-radius: 2rem;
   border: transparent;
   box-shadow: 1rem 1rem 9rem 1rem chocolate;
@@ -49,6 +51,7 @@
   width: 6rem;
   margin: 0;
   animation: glow 3s ease-in-out;
+  flex: 0 0 auto;
 }
 
 @keyframes glow {
@@ -74,4 +77,39 @@
 .contact,
 .quote {
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .main-container {
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+
+  .nav-pages {
+    flex: 1;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding-right: 0;
+  }
+
+  .mid-section {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.25rem 1rem;
+  }
+
+  .mid-section p {
+    margin: 0.35rem 0;
+  }
+
+  .quote {
+    max-width: 7rem;
+    padding: 0.5rem 0.75rem;
+  }
 }
