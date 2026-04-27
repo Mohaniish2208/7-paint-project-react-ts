@@ -12,30 +12,40 @@ export default function Quote() {
   ]
   return (
     <form className="form=container">
-      <p>Please enter the information</p>
-      <form>
-        <label className="label">Name</label>
-        <input required className="name" type="text" placeholder="Type here..." />
+      <p className="para-heading">Please enter the information</p>
+      <form className="form-container">
+        <div className="container">
+          <label className="label">Name</label>
+          <input required className="name" type="text" placeholder="Type here..." />
+        </div>
 
-        <label className="label">Email</label>
-        <input required className="email" type="email" />
+        <div className="container">
+          <label className="label">Email</label>
+          <input required className="email" type="email" />
+        </div>
 
-        <label className="label">Message</label>
-        <input required className="msg" type="text" />
+        <div className="container">
+          <label className="label">Message</label>
+          <input required className="msg" type="text" />
+        </div>
 
-        <label className="label">Phone Number</label>
-        <input required type="number" />
+        <div className="container">
+          <label className="label">Phone Number</label>
+          <input required type="number" />
+        </div>
 
-        <select required value={option} className="option" onChange={(e) => setOption(e.target.value)}>
-          <option className="default" value="">
-            Select Service Type
-          </option>
-          {options.map((item) => (
-            <option className="option-list" key={item}>
-              {item}
+        <div className="container">
+          <select required value={option} className="option" onChange={(e) => setOption(e.target.value)}>
+            <option className="default" value="">
+              Select Service Type
             </option>
-          ))}
-        </select>
+            {options.map((item) => (
+              <option className="option-list" key={item}>
+                {item}
+              </option>
+            ))}
+          </select>
+        </div>
 
         <button type="submit">SEND</button>
       </form>
