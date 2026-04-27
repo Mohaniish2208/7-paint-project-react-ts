@@ -1,10 +1,32 @@
 @import "variables.css";
 
-.container {
+.quote-container {
   display: flex;
   flex-direction: column;
+  margin: 0.5rem;
 }
 
-.label {
-  font: var(--theme-head-font);
+.quote-form-container {
+  font-family: var(--theme-head-font);
+  margin-bottom: 1rem;
+  width: min(100%, 40vw);
+}
+
+.name,
+.email,
+.msg,
+.number {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+  width: min(100%, 30vw);
+  border: transparent;
+  border-bottom: 0.01rem solid black;
+  background: rgba(255, 255, 255, 0.1);
+}
+.quote-btn {
+  font-family: var(--theme-head-font);
+}
+.para-heading {
+  font-family: var(--theme-head-font);
 }

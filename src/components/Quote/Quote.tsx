@@ -1,7 +1,8 @@
 import { useState } from "react"
-
+import "../styles/Quote.css"
 export default function Quote() {
   const [option, setOption] = useState("")
+
   const options = [
     "Kitchen Cabinet Painting",
     "Interior House Painting",
@@ -10,28 +11,60 @@ export default function Quote() {
     "Brick staining",
     "Real Estate Painting",
   ]
+
+  const [name, setName] = useState("")
+  const [text, setText] = useState("")
+
+  const handleCaps = (text: string) => {
+    if (text.trim() === "") return ""
+    return text.replace(/^(\s*)([a-z])/, (_, spaces, firstLetter) => {
+      return spaces + firstLetter.toUpperCase()
+    })
+  }
+
+  const [num, setNum] = useState("")
+  const handleNumberFormat = (num: string) => {
+    return num.replace(/\D/g, "")
+  }
+
   return (
-    <form className="form=container">
+    <div className="quote-container">
       <p className="para-heading">Please enter the information</p>
-      <form className="form-container">
+      <form className="quote-form-container">
         <div className="container">
-          <label className="label">Name</label>
-          <input required className="name" type="text" placeholder="Type here..." />
+          <input
+            required
+            className="name"
+            value={name}
+            type="text"
+            placeholder="Name"
+            onChange={(e) => setName(handleCaps(e.target.value))}
+          />
         </div>
 
         <div className="container">
-          <label className="label">Email</label>
-          <input required className="email" type="email" />
+          <input required className="email" type="email" placeholder="Email" />
         </div>
 
         <div className="container">
-          <label className="label">Message</label>
-          <input required className="msg" type="text" />
+          <textarea
+            required
+            value={text}
+            className="msg"
+            placeholder="Message"
+            onChange={(e) => setText(handleCaps(e.target.value))}
+          />
         </div>
 
         <div className="container">
-          <label className="label">Phone Number</label>
-          <input required type="number" />
+          <input
+            required
+            className="number"
+            value={num}
+            type="text"
+            placeholder="Phone Number"
+            onChange={(e) => setNum(handleNumberFormat(e.target.value))}
+          />
         </div>
 
         <div className="container">
@@ -40,15 +73,17 @@ export default function Quote() {
               Select Service Type
             </option>
             {options.map((item) => (
-              <option className="option-list" key={item}>
+              <option className="option-list" key={item} value={item}>
                 {item}
               </option>
             ))}
           </select>
         </div>
 
-        <button type="submit">SEND</button>
+        <button className="quote-btn" type="submit">
+          SEND
+        </button>
       </form>
-    </form>
+    </div>
   )
 }
