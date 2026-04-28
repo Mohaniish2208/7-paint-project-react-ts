@@ -7,6 +7,34 @@
   font-family: var(--theme-head-font);
 }
 
+.marketting-and-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.marketting-section {
+  margin-left: 3rem;
+  width: min(100%, 40vw);
+}
+
+.marketting-head {
+  font-family: var(--summary-font);
+  font-size: 2.5rem;
+  color: #3b3b3b;
+}
+
+.marketting-para {
+  font-family: var(--summary-font);
+  font-weight: 600;
+}
+
+.first-time {
+  color: black;
+  font-family: var(--first-time);
+  text-shadow: 2rem 1rem 2rem yellowgreen;
+}
+
 .quote-form-container {
   font-family: var(--theme-head-font);
   margin-bottom: 1rem;
@@ -17,7 +45,7 @@
 }
 
 .para-heading {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: var(--thick-font8);
 }
 

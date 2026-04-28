@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sekuya&display=swap");
 
 :root {
   --theme-head-font: "Bricolage Grotesque";
@@ -13,4 +14,5 @@
   --punch-font-for-you: "Pacifico";
 
   --summary-font: "Exo 2";
+  --first-time: "Sekuya";
 }
