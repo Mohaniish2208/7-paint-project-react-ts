@@ -69,9 +69,7 @@ export default function Quote() {
 
         <div className="container">
           <select required value={option} className="option" onChange={(e) => setOption(e.target.value)}>
-            <option className="default" value="">
-              Select Service Type
-            </option>
+            <option value="">Select Service Type</option>
             {options.map((item) => (
               <option className="option-list" key={item} value={item}>
                 {item}
