@@ -73,6 +73,16 @@
   padding: 0.75rem 2rem;
 }
 
+.quote-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.quote-status {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
 .option {
   margin-top: 1rem;
   padding: 0.5rem;
