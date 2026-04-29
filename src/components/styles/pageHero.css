@@ -58,7 +58,7 @@ body,
 .summary {
   font-family: var(--summary-font);
   font-size: clamp(1.1rem, 4vw, 2rem);
-  max-width: 28rem;
+  width: min(100%, 50vw);
   color: #444;
   font-weight: 600;
   line-height: 1.5;
