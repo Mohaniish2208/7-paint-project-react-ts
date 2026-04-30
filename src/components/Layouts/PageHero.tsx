@@ -10,6 +10,13 @@ export default function PageHero() {
           With a focus on trust, craftsmanship, and detail, we transform Toronto homes and commercial spaces into
           polished, vibrant environments that stand the test of time.
         </p>
+        <div className="trust-bar">
+          <span>20+ years experience</span>
+          <span>Free Estimates</span>
+          <span>GTA Residential Paintings</span>
+          <span>Quality Materials</span>
+          <span>References Available</span>
+        </div>
       </div>
     </div>
   )

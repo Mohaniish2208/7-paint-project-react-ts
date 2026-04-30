@@ -79,6 +79,8 @@
 .faqs,
 .quote {
   cursor: pointer;
+  color: rgb(30, 30, 30);
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

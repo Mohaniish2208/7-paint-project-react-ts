@@ -1,4 +1,3 @@
-import { Route, Routes } from "react-router-dom"
 import About from "./components/Sections/about/About"
 import Contact from "./components/Sections/contact/Contact"
 import Reviews from "./components/Sections/reviews/Reviews"
@@ -12,15 +11,35 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Routes>
-        <Route path="/" element={<PageHero />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="faqs" element={<FAQs />} />
-        <Route path="reviews" element={<Reviews />} />
-        <Route path="services" element={<Services />} />
-        <Route path="quote" element={<Quote />} />
-      </Routes>
+      <main>
+        <section id="home">
+          <PageHero />
+        </section>
+
+        <section id="services">
+          <Services />
+        </section>
+
+        <section id="about">
+          <About />
+        </section>
+
+        <section id="review">
+          <Reviews />
+        </section>
+
+        <section id="faqs">
+          <FAQs />
+        </section>
+
+        <section id="quote">
+          <Quote />
+        </section>
+
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
     </div>
   )
 }
