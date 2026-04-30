@@ -8,7 +8,8 @@ export default function PageHero() {
         <p className="for-you">for you!</p>
         <p className="summary">
           With a focus on trust, craftsmanship, and detail, we transform Toronto homes and commercial spaces into
-          polished, vibrant environments that stand the test of time.
+          polished, vibrant environments that stand the test of time. Painting across the Greater Toronto Area, backed
+          by 20+ years of experience.
         </p>
         <div className="trust-bar">
           <span>20+ years experience</span>

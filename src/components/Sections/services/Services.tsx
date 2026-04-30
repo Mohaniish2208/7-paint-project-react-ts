@@ -1,7 +1,15 @@
 export default function Services() {
+  const services = [
+    "House Painting",
+    "Condos & Apartments",
+    "Multi-Unit Buildings",
+    "Realtor Listing Refreshes",
+    "Select Commercial Projects",
+    "Free Colour Consulting",
+  ]
   return (
-    <div>
-      <h1 className="page-heading">Services</h1>
+    <div className="services-container">
+      <p className="page-heading">{services}</p>
     </div>
   )
 }
