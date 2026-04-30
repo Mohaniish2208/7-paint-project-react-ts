@@ -1,60 +1,73 @@
+import { useState } from "react"
+import "../../styles/faqs.css"
+
+const faqs = [
+  {
+    question: "What is included in your quote?",
+    answer: "Prep work, surface protection, painting, cleanup, and the agreed number of coats are included.",
+  },
+  {
+    question: "What type of paint do you use?",
+    answer: "We use quality paint brands suited to the surface, room type, durability needs, and finish preference.",
+  },
+  {
+    question: "Do you repair wall damage before painting?",
+    answer: "Yes, minor patching, sanding, and surface preparation are handled before painting begins.",
+  },
+  {
+    question: "Can I stay home during the painting work?",
+    answer: "Yes, in most cases. We work neatly and section by section to reduce disruption.",
+  },
+  {
+    question: "Do you offer a warranty or guarantee?",
+    answer: "Yes, we stand behind our workmanship and can explain warranty details before the project begins.",
+  },
+  {
+    question: "Can you give me a rough price over the phone?",
+    answer:
+      "Yes, but the final price depends on the actual space, wall condition, paint type, and amount of prep needed.",
+  },
+  {
+    question: "Will you patch nail holes and small cracks?",
+    answer: "Yes, minor patching is usually included. Larger repairs or damaged drywall may cost extra.",
+  },
+  {
+    question: "What happens if the walls need more repair than expected?",
+    answer: "We will explain the issue before doing extra work and confirm any added cost first.",
+  },
+  {
+    question: "How long does one room usually take?",
+    answer: "A standard room often takes one day, depending on prep, room size, drying time, and number of coats.",
+  },
+  {
+    question: "Do you bring your own tools and supplies?",
+    answer: "Yes. We bring brushes, rollers, drop cloths, tape, ladders, and other required tools.",
+  },
+]
+
 export default function FAQs() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
+
   return (
     <div className="main-faq-container">
-      <div className="question-container">
-        <p className="question">1. What is included in your quote?</p>
-        <p className="answer">
-          Prep work, surface protection, painting, cleanup, and the agreed number of coats are included.
-        </p>
-      </div>
-      <div>
-        <p className="question">2. What type of paint do you use?</p>
-        <p className="answer">
-          We use quality paint brands suited to the surface, room type, durability needs, and finish preference.
-        </p>
-      </div>
-      <div>
-        <p className="question">3. Do you repair wall damage before painting?</p>
-        <p className="answer">
-          Yes, minor patching, sanding, and surface preparation are handled before painting begins.
-        </p>
-      </div>
-      <div>
-        <p className="question">4. Can I stay home during the painting work?</p>
-        <p className="answer">Yes, in most cases. We work neatly and section by section to reduce disruption.</p>
-      </div>
-      <div>
-        <p className="question">5. Do you offer a warranty or guarantee?</p>
-        <p className="answer">
-          Yes, we stand behind our workmanship and can explain warranty details before the project begins.
-        </p>
-      </div>
-      <div>
-        <p className="question">6. Can you give me a rough price over the phone?</p>
-        <p className="answer">
-          Yes, but the final price depends on the actual space, wall condition, paint type, and amount of prep needed.
-        </p>
-      </div>
-      <div>
-        <p className="question">7. Will you patch nail holes and small cracks?</p>
-        <p className="answer">
-          Yes, minor patching is usually included. Larger repairs or damaged drywall may cost extra.
-        </p>
-      </div>
-      <div>
-        <p className="question">8. What happens if the walls need more repair than expected?</p>
-        <p className="answer">We will explain the issue before doing extra work and confirm any added cost first.</p>
-      </div>
-      <div>
-        <p className="question">9. How long does one room usually take?</p>
-        <p className="answer">
-          A standard room often takes one day, depending on prep, room size, drying time, and number of coats.
-        </p>
-      </div>
-      <div>
-        <p className="question">10. Do you bring your own tools and supplies?</p>
-        <p className="answer">Yes. We bring brushes, rollers, drop cloths, tape, ladders, and other required tools.</p>
-      </div>
+      {faqs.map((faq, index) => {
+        const isOpen = openIndex === index
+        return (
+          <div className="faq-container" key={faq.question}>
+            <div className="faq-question-row">
+              <p className="question">
+                {index + 1}. {faq.question}
+              </p>
+              <button className="view-btn" onClick={() => setOpenIndex(isOpen ? null : index)}>
+                {isOpen ? "HIDE" : "VIEW"}
+              </button>
+            </div>
+            <div className={`answer-box ${isOpen ? "open" : ""}`}>
+              <p className="answer">{faq.answer}</p>
+            </div>
+          </div>
+        )
+      })}
     </div>
   )
 }
