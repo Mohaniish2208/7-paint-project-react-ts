@@ -11,12 +11,24 @@ export default function PageHero() {
           polished, vibrant environments that stand the test of time. Painting across the Greater Toronto Area, backed
           by 20+ years of experience.
         </p>
+      </div>
+      <div className="trust-bar-container">
         <div className="trust-bar">
-          <span>20+ years experience</span>
-          <span>Free Estimates</span>
-          <span>GTA Residential Paintings</span>
-          <span>Quality Materials</span>
-          <span>References Available</span>
+          <div className="child">
+            <span>20+ years experience</span>
+          </div>
+          <div className="child">
+            <span>Free Estimates</span>
+          </div>
+          <div className="child">
+            <span>East and Central Region</span>
+          </div>
+          <div className="child">
+            <span>Quality Materials</span>
+          </div>
+          <div className="child-last">
+            <span>References Available</span>
+          </div>
         </div>
       </div>
     </div>

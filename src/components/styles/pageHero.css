@@ -25,6 +25,7 @@ section {
 
 .page-hero-container {
   display: flex;
+  flex-direction: column;
   min-height: calc(100vh - 6rem);
   padding: 3rem 1.5rem;
 }
@@ -73,7 +74,48 @@ section {
   line-height: 1.5;
 }
 
-@media (max-width: 767px) {
+.trust-bar-container {
+  display: flex;
+  flex-direction: column;
+  width: min(100% - 2rem, 92rem);
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 3rem) 0;
+}
+
+.trust-bar {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  font-weight: 600;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  font-family: var(--summary-font);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 1rem 2rem 8rem rgba(178, 178, 178, 0.5);
+}
+
+.child,
+.child-last {
+  min-height: 4.5rem;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid goldenrod;
+  padding: 1rem;
+}
+
+.child-last {
+  padding: 1rem;
+  border-right: none;
+}
+
+.child span,
+.child-last span {
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  line-height: 1.15;
+}
+
+@media (max-width: 768px) {
   .page-hero-container {
     min-height: calc(100vh - 6rem);
     padding: 2rem 1.25rem;
@@ -82,5 +124,20 @@ section {
   .punch-line-section {
     width: 100%;
     margin-left: 0;
+  }
+
+  @media (max-width: 600px) {
+    .trust-bar {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .child {
+      border-bottom: 2px solid goldenrod;
+    }
+
+    .child-last {
+      grid-column: 1/-1;
+      border-bottom: 2px solid goldenrod;
+    }
   }
 }
