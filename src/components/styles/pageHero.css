@@ -126,7 +126,7 @@ section {
 
 @media (max-width: 1440px) {
   .punch-line {
-    width: min(130%, 92vw);
+    width: min(140%, 92vw);
   }
 }
 

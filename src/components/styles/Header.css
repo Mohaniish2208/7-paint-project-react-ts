@@ -13,6 +13,8 @@
   border-bottom: 1px solid #eee;
   gap: 1rem;
   padding-right: 1rem;
+  position: sticky;
+  z-index: 1000;
 }
 
 .nav-pages {
