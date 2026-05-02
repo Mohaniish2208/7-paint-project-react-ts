@@ -1,0 +1,73 @@
+.services-container {
+  display: flex;
+  flex-direction: row;
+  padding: clamp(1rem 2vw 3rem);
+  width: min(100% - 2rem, 92rem);
+  margin: 0 auto;
+}
+
+.service-bar {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  font-family: var(--summary-font);
+  font-weight: 700;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.811);
+  margin: 0 0.5rem;
+  box-shadow: 1rem 4rem 2rem rgba(128, 128, 128, 0.6);
+}
+
+.house-icon,
+.condos-icon,
+.multi-units-icon,
+.realtor-icon,
+.commercial-icon,
+.colors-icon {
+  display: flex;
+  height: 5rem;
+}
+.colors-icon {
+  border: none;
+}
+
+.services-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-right: 3px solid goldenrod;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.house-icon:hover,
+.condos-icon:hover,
+.multi-units-icon:hover,
+.realtor-icon:hover,
+.commercial-icon:hover,
+.colors-icon:hover {
+  animation: premium 2s ease-in;
+}
+
+@keyframes premium {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+  }
+}
+
+.services-child-last {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.811);
+  width: min(100% - 2, 92rem);
+  cursor: pointer;
+}
