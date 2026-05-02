@@ -41,7 +41,7 @@ section {
 .punch-line {
   font-family: var(--punch-font);
   font-weight: 700;
-  font-size: clamp(2.5rem, 9vw, 4.75rem);
+  font-size: clamp(2.5rem, 9vw, 6.75rem);
   background: linear-gradient(135deg, #8a2be2, #ffb703, #ff006e, #00f0ff, #a8ff00, #ff3d57);
   background-clip: text;
   -webkit-background-clip: text;
@@ -122,6 +122,15 @@ section {
 .child-last span {
   font-size: clamp(0.75rem, 2vw, 1rem);
   line-height: 1.15;
+}
+
+@media (max-width: 2560px) {
+  .punch-line {
+    width: min(190%, 92vw);
+  }
+  .trust-bar-container {
+    margin: auto;
+  }
 }
 
 @media (max-width: 1440px) {
