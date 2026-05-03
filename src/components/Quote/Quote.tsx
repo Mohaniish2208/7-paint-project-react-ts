@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../../styles/quote.css"
+import "../../../src/components/styles/quote.css"
 export default function Quote() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")

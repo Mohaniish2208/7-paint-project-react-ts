@@ -1,4 +1,4 @@
-import "../styles/pageHero.css"
+import "../../../src/components/styles/pageHero.css"
 
 export default function PageHero() {
   return (
