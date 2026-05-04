@@ -6,6 +6,9 @@ export default function Header() {
       <img className="logo" src="/painting-logo.svg" alt="logo" />
 
       <div className="nav-pages">
+        <div className="contact-info">
+          <div className="phone"></div>
+        </div>
         <div className="mid-section">
           <a className="home" href="#home">
             Home
