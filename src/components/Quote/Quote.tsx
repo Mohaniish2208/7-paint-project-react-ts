@@ -75,13 +75,13 @@ export default function Quote() {
       <div className="marketting-and-form">
         <div className="marketting-section">
           <h2 className="marketting-head">
-            Eastern Painting Services for Bright, Polished Spaces - Done Right the{" "}
+            Eastern Painting Services for Bright, Vibrant Spaces - Done Right the
             <span className="first-time">First Time!</span>
           </h2>
           <p className="marketting-para">
             Bring new life to your home with clean lines, smooth finishes, and careful attention to detail. From
-            interior walls and kitchen cabinets to exterior surfaces and deck staining, Eastern Painting Services
-            delivers reliable painting work that makes your space feel fresh, finished, and well cared for.
+            interior walls to select exterior surfaces and deck staining, Eastern Painting Services delivers reliable
+            painting work that makes your space feel fresh, finished, and well cared for.
           </p>
         </div>
         <form className="quote-form-container" onSubmit={handleSubmit}>
