@@ -80,8 +80,8 @@ export default function Quote() {
           </h2>
           <p className="marketting-para">
             Bring new life to your home with clean lines, smooth finishes, and careful attention to detail. From
-            interior walls to select exterior surfaces and deck staining, Eastern Painting Services delivers reliable
-            painting work that makes your space feel fresh, finished, and well cared for.
+            interior walls to select exterior surfaces and deck staining/painting, Eastern Painting Services delivers
+            reliable painting work that makes your space feel fresh, finished, and well cared for.
           </p>
         </div>
         <form className="quote-form-container" onSubmit={handleSubmit}>
