@@ -5,12 +5,14 @@
   flex-direction: column;
   margin: 0.5rem;
   font-family: var(--theme-head-font);
+  z-index: 5;
 }
 
 .marketting-and-form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .marketting-section {
@@ -45,6 +47,7 @@
 }
 
 .para-heading {
+  margin-left: 3rem;
   font-size: 1.5rem;
   font-weight: var(--thick-font8);
 }
@@ -126,4 +129,9 @@
 
 .option-list {
   cursor: pointer;
+}
+
+.back-btn a {
+  color: inherit;
+  text-decoration: none;
 }
