@@ -1,0 +1,12 @@
+.contact-container {
+  border-top: 2px solid rgb(109, 109, 109);
+  background: linear-gradient(-5deg, rgba(25, 144, 255, 0.8), rgba(255, 255, 255, 0.8));
+  font-family: var(--summary-font);
+}
+
+.title,
+.business-phone,
+.business-email,
+.business-address {
+  margin: 1rem;
+}
