@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "../../../src/components/styles/quote.css"
-import { Link } from "react-router-dom"
+
 export default function Quote() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")

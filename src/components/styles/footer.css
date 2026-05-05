@@ -1,7 +1,14 @@
 .contact-container {
+  display: flex;
+  flex-direction: column;
   border-top: 2px solid rgb(109, 109, 109);
-  background: linear-gradient(-5deg, rgba(25, 144, 255, 0.8), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(135deg, #1f2933, #334155);
+  color: #f8fafc;
   font-family: var(--summary-font);
+}
+
+.inner-container {
+  width: clamp(15rem 2vw 20rem);
 }
 
 .title,
@@ -9,4 +16,10 @@
 .business-email,
 .business-address {
   margin: 1rem;
+}
+
+.business-number,
+.business-email {
+  text-decoration: none;
+  color: inherit;
 }

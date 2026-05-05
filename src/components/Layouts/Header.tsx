@@ -10,19 +10,19 @@ export default function Header() {
 
       <div className="nav-pages">
         <div className="mid-section">
-          <a className="home" href="#home">
+          <a className="home" href="/#home">
             Home
           </a>
-          <a className="services" href="#services">
+          <a className="services" href="/#services">
             Services
           </a>
-          <a className="about" href="#about">
+          <a className="about" href="/#about">
             About
           </a>
-          <a className="faqs" href="#faqs">
+          <a className="faqs" href="/#faqs">
             FAQs
           </a>
-          <a className="contact" href="#contact">
+          <a className="contact" href="/#contact">
             Contact Us
           </a>
           <button
