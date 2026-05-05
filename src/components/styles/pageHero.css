@@ -27,7 +27,7 @@ section {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 6rem);
-  padding: 3rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .punch-line-section {
@@ -129,7 +129,7 @@ section {
     width: min(190%, 92vw);
   }
   .trust-bar-container {
-    margin: auto;
+    margin-bottom: 0;
   }
 }
 

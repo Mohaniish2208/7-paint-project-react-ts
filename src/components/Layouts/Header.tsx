@@ -23,7 +23,7 @@ export default function Header() {
             FAQs
           </a>
           <a className="contact" href="#contact">
-            Contact
+            Contact Us
           </a>
           <button
             type="button"

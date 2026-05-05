@@ -72,7 +72,7 @@ export default function Quote() {
 
   return (
     <div className="quote-container">
-      <button>
+      <button className="back-btn">
         <Link to={"/"}>Go Back</Link>
       </button>
       <h2 className="para-heading">Please enter your information</h2>
