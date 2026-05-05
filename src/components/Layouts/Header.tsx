@@ -1,14 +1,14 @@
+import { useNavigate } from "react-router-dom"
 import "../../../src/components/styles/header.css"
 
 export default function Header() {
+  const navigate = useNavigate()
+
   return (
     <div className="main-container">
       <img className="logo" src="/painting-logo.svg" alt="logo" />
 
       <div className="nav-pages">
-        <div className="contact-info">
-          <div className="phone"></div>
-        </div>
         <div className="mid-section">
           <a className="home" href="#home">
             Home
@@ -25,9 +25,15 @@ export default function Header() {
           <a className="contact" href="#contact">
             Contact
           </a>
-          <a className="quote" href="#quote">
+          <button
+            type="button"
+            className="quote"
+            onClick={() => {
+              navigate("/quote")
+            }}
+          >
             Get a free quote {"\u279C"}
-          </a>
+          </button>
         </div>
       </div>
     </div>

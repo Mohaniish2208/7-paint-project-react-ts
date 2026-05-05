@@ -1,45 +1,51 @@
 import About from "./components/Sections/about/About"
-import Contact from "./components/Sections/contact/Contact"
 import Reviews from "./components/Sections/reviews/Reviews"
 import Services from "./components/Sections/services/Services"
 import Header from "./components/Layouts/Header"
 import PageHero from "./components/Layouts/PageHero"
 import FAQs from "./components/Sections/faq/Faqs"
 import Quote from "./components/Quote/Quote"
+import Footer from "./components/Layouts/Footer"
+import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <main>
-        <section id="home">
-          <PageHero />
-        </section>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <main>
+              <section id="home">
+                <PageHero />
+              </section>
 
-        <section id="services">
-          <Services />
-        </section>
+              <section id="services">
+                <Services />
+              </section>
 
-        <section id="about">
-          <About />
-        </section>
+              <section id="about">
+                <About />
+              </section>
 
-        <section id="review">
-          <Reviews />
-        </section>
+              <section id="review">
+                <Reviews />
+              </section>
 
-        <section id="faqs">
-          <FAQs />
-        </section>
+              <section id="faqs">
+                <FAQs />
+              </section>
 
-        <section id="quote">
-          <Quote />
-        </section>
+              <section id="contact">
+                <Footer />
+              </section>
+            </main>
+          }
+        />
 
-        <section id="contact">
-          <Contact />
-        </section>
-      </main>
+        <Route path="/quote" element={<Quote />} />
+      </Routes>
     </div>
   )
 }

@@ -15,8 +15,17 @@
   padding-right: 1rem;
   position: sticky;
   top: 0;
-
   z-index: 1000;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+
+.phone-img {
+  height: 1.2rem;
 }
 
 .nav-pages {

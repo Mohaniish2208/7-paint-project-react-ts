@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "../../../src/components/styles/quote.css"
+import { Link } from "react-router-dom"
 export default function Quote() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -71,6 +72,9 @@ export default function Quote() {
 
   return (
     <div className="quote-container">
+      <button>
+        <Link to={"/"}>Go Back</Link>
+      </button>
       <h2 className="para-heading">Please enter your information</h2>
       <div className="marketting-and-form">
         <div className="marketting-section">
