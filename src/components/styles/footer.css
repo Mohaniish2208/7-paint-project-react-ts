@@ -1,25 +1,55 @@
 .contact-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   border-top: 2px solid rgb(109, 109, 109);
   background: linear-gradient(135deg, #1f2933, #334155);
   color: #f8fafc;
   font-family: var(--summary-font);
 }
 
-.inner-container {
-  width: clamp(15rem 2vw 20rem);
+.footer-info {
+  margin: 2rem;
 }
 
-.title,
-.business-phone,
-.business-email,
-.business-address {
-  margin: 1rem;
+.contact-row {
+  display: grid;
+  grid-template-columns: 6rem 1rem minmax(0, 1fr);
+  align-items: start;
+  line-height: 1.35;
+}
+
+.contact-row strong {
+  grid-column: 1;
+}
+
+.contact-row a {
+  grid-column: 3;
+  color: inherit;
+  text-decoration: none;
+}
+
+.inner-container {
+  width: clamp(25rem, 2vw, 60rem);
+}
+
+.title {
+  margin: 2rem;
 }
 
 .business-number,
 .business-email {
   text-decoration: none;
   color: inherit;
+}
+
+.map-address {
+  text-decoration: none;
+  color: inherit;
+}
+
+.skyline-footer {
+  height: 15rem;
+  filter: brightness(0) invert(1);
+  margin: 0;
 }
