@@ -76,7 +76,7 @@ export default function Quote() {
         <div className="marketting-section">
           <h2 className="marketting-head">
             Eastern Painting Services for Bright, Vibrant Spaces - Done Right the
-            <span className="first-time">First Time!</span>
+            <span className="first-time"> First Time!</span>
           </h2>
           <p className="marketting-para">
             Bring new life to your home with clean lines, smooth finishes, and careful attention to detail. From
