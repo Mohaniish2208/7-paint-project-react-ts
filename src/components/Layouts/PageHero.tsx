@@ -1,8 +1,23 @@
+import { useRef } from "react"
 import "../../../src/components/styles/pageHero.css"
+import { useGSAP } from "@gsap/react"
+import HeroAnimation from "../../heroAnimation"
 
 export default function PageHero() {
+  const heroRef = useRef<HTMLDivElement | null>(null)
+
+  useGSAP(
+    () => {
+      if (!heroRef.current) return
+      HeroAnimation(heroRef.current)
+    },
+    {
+      scope: heroRef,
+    },
+  )
+
   return (
-    <div className="page-hero-container">
+    <div className="page-hero-container" ref={heroRef}>
       <div className="punch-line-section">
         <p className="punch-line">Let us brighten things up</p>
         <p className="for-you">for you!</p>
