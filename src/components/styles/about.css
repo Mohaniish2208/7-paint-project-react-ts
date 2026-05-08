@@ -8,14 +8,52 @@
   font-weight: 800;
 }
 
-.name {
+.name-story {
   font-family: var(--summary-font);
   font-weight: 700;
   font-size: 1.2rem;
   color: rgb(40, 85, 151);
 }
 
+.photo-space {
+  width: 100%;
+}
+
 .story {
   font-family: var(--summary-font);
   color: rgb(90, 90, 90);
+}
+
+@media (min-width: 425px) {
+  .photo-space-1 {
+    width: 50%;
+  }
+
+  .name-story {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: min(100%, 40vw);
+  }
+
+  .story {
+    font-size: 0.7rem;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 768px) {
+  .photo-space {
+    width: 50%;
+  }
+
+  .name-story {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    width: min(100%, 40vw);
+  }
+
+  .story {
+    font-size: 1.2rem;
+  }
 }

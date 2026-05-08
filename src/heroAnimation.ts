@@ -30,7 +30,7 @@ export default function HeroAnimation(hero: HTMLElement) {
   })
 
   gsap.to(punchLineSection, {
-    yPercent: 10,
+    yPercent: 20,
     ease: "none",
     scrollTrigger: {
       trigger: hero,
