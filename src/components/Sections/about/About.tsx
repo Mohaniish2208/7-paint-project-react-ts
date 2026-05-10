@@ -48,7 +48,7 @@ export default function About() {
         <div className="section">
           <p className="name-story">Built on Trust and Craftsmanship</p>
           <p className="story">
-            I've always believed in doing honest work with quality materials and fair pricing. Over time, that's led to
+            I have always believed in doing honest work with quality materials and fair pricing. Over time, that's led to
             strong relationships, repeat clients, and referrals. That trust means everything.
           </p>
         </div>
