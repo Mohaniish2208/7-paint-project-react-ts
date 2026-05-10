@@ -11,7 +11,10 @@ export default function About() {
             I grew up in Nova Scotia near the Atlantic, working in the commercial fishing industry. Alongside fishing, I
             found myself painting boats, something most people avoided, but I genuinely enjoyed. Before long, other
             fishermen started calling me to help with their boats. That's where it all began. To this day, I still say
-            I've got salt water in my veins.
+            I've got salt water in my veins.{" "}
+            <span className="steve-image-section">
+              <img className="steve-image" src="../../../../public/Thornhill Condo/steve.jpg" alt="steve-image" />
+            </span>
           </p>
         </div>
 
