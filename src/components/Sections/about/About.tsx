@@ -9,9 +9,9 @@ export default function About() {
           <p className="name-story">From Saltwater to Paintbrush</p>
           <p className="story photo-space-1">
             I grew up in Nova Scotia near the Atlantic, working in the commercial fishing industry. Alongside fishing, I
-            found myself painting boats, something most people avoided, but I genuinely enjoyed. Before long, other
+            found myself painting boats, something most people avoided, but I genuinely enjoyed it. Before long, other
             fishermen started calling me to help with their boats. That's where it all began. To this day, I still say
-            I've got salt water in my veins.{" "}
+            I've got salt water in my veins.
             <span className="steve-image-section">
               <img className="steve-image" src="../../../../public/Thornhill Condo/steve.jpg" alt="steve-image" />
             </span>
@@ -48,8 +48,8 @@ export default function About() {
         <div className="section">
           <p className="name-story">Built on Trust and Craftsmanship</p>
           <p className="story">
-            I have always believed in doing honest work with quality materials and fair pricing. Over time, that's led to
-            strong relationships, repeat clients, and referrals. That trust means everything.
+            I have always believed in doing honest work with quality materials and fair pricing. Over time, that's led
+            to strong relationships, repeat clients, and referrals. That trust means everything.
           </p>
         </div>
 

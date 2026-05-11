@@ -37,11 +37,12 @@ const faqs = [
   },
   {
     question: "How long does one room usually take?",
-    answer: "A standard room often takes one day, depending on prep, room size, drying time, and number of coats.",
+    answer:
+      "The time needed to paint a room varies from job to job. It depends if it is walls only, or trim, or even the ceiling. Once a room is checked, it will be easier to estimate a time frame for the project.",
   },
   {
     question: "Do you bring your own tools and supplies?",
-    answer: "Yes. We bring brushes, rollers, drop cloths, tape, ladders, and other required tools.",
+    answer: "Yes. We carry our own professional grade equipment/supplies.",
   },
 ]
 
