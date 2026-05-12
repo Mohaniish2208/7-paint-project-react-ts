@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { services } from "./Services"
+import { services } from "../constants/services"
 
 export default function ServicePage() {
   const { serviceSlug } = useParams()
@@ -7,17 +7,23 @@ export default function ServicePage() {
   const service = services.find((item) => item.slug === serviceSlug)
 
   if (!service) {
-    return <h1>No Service Found</h1>
+    return (
+      <main>
+        <h1>No Service Found</h1>
+      </main>
+    )
   }
 
   return (
-    <div>
-      <h1>{service.title}</h1>
-      <div>
+    <main>
+      <section>
+        <h1>{service.title}</h1>
+      </section>
+      <section>
         {service.photos.map((photo) => (
           <img key={photo} src={photo} alt={service.title} />
         ))}
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }

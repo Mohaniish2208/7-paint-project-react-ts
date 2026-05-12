@@ -2,7 +2,8 @@ import { gsap } from "gsap"
 import "../../styles/services.css"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { Link } from "react-router-dom"
-import { services } from "../../../components/Sections/services/services"
+import { services } from "../constants/services"
+
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Services() {
