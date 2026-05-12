@@ -3,7 +3,7 @@ export const services = [
     title: "House Painting",
     slug: "house-painting",
     icon: "/house.svg",
-    image: "../../../../public/service-thumbnails/house-painting.jpg",
+    image: "/service-thumbnails/house-painting.jpg",
     photos: [
       "/East House/IMG-20260507-WA0070.jpg",
       "/East House/IMG-20260507-WA0071.jpg",
@@ -16,7 +16,7 @@ export const services = [
     title: "Condos and Apartments",
     slug: "condos-and-apartments",
     icon: "/condos.svg",
-    image: "../../../../public/service-thumbnails/condos-and-apartments.png",
+    image: "/service-thumbnails/condos-and-apartments.png",
     photos: [
       "/Thornhill Condo/IMG-20260507-WA0003.jpg",
       "/Thornhill Condo/IMG-20260507-WA0004.jpg",
@@ -28,7 +28,7 @@ export const services = [
     title: "Multi-unit Buildings",
     slug: "multi-unit-buildings",
     icon: "/multi-units.svg",
-    image: "../../../../public/service-thumbnails/multi-unit-buildings.jpg",
+    image: "/service-thumbnails/multi-unit-buildings.jpg",
     photos: [
       "/Condo Central Toronto/IMG-20260507-WA0013.jpg",
       "/Condo Central Toronto/IMG-20260507-WA0014.jpg",
@@ -48,7 +48,7 @@ export const services = [
     title: "Realtor Listing Refreshes",
     slug: "realtor-listing",
     icon: "/realtor.svg",
-    image: "../../../../public/service-thumbnails/realtor-listing-refreshes.png",
+    image: "/service-thumbnails/realtor-listing-refreshes.png",
     photos: [
       "/Yorkville Condo/IMG-20260507-WA0093.jpg",
       "/Yorkville Condo/IMG-20260507-WA0094.jpg",
