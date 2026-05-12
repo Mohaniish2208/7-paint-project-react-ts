@@ -7,6 +7,7 @@ import FAQs from "./components/Sections/faq/Faqs"
 import Quote from "./components/Quote/Quote"
 import Footer from "./components/Layouts/Footer"
 import { Route, Routes } from "react-router-dom"
+import ServicePage from "./components/Sections/services/ServicePage"
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         />
 
         <Route path="/quote" element={<Quote />} />
+        <Route path="/services/:serviceSlug" element={<ServicePage />} />
       </Routes>
     </div>
   )

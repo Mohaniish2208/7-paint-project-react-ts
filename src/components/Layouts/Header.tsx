@@ -17,7 +17,7 @@ export default function Header() {
             Services
           </a>
           <a className="about" href="/#about">
-            About
+            About Us
           </a>
           <a className="faqs" href="/#faqs">
             FAQs
