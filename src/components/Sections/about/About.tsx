@@ -13,7 +13,7 @@ export default function About() {
             fishermen started calling me to help with their boats. That's where it all began. To this day, I still say
             I've got salt water in my veins.
             <span className="steve-image-section">
-              <img className="steve-image" src="../../../../public/Thornhill Condo/steve.jpg" alt="steve-image" />
+              <img className="steve-image" src="/Thornhill Condo/steve.jpg" alt="steve-image" />
             </span>
           </p>
         </div>
