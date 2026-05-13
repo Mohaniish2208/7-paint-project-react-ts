@@ -56,8 +56,8 @@ export default function ServicePage() {
               onMouseEnter={() => tweenRef.current?.pause()}
               onMouseLeave={() => tweenRef.current?.resume()}
             >
-              {galleryPhotos.map((photo) => (
-                <img key={photo} src={photo} alt={service.title} />
+              {galleryPhotos.map((photo, index) => (
+                <img key={`${photo}-${index}`} src={photo} alt={service.title} />
               ))}
             </div>
           </div>
