@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <img className="skyline-footer" src="./skyline.svg" alt="skyline-footer" />
+      <img className="skyline-footer" src="/skyline.svg" alt="skyline-footer" />
     </div>
   )
 }

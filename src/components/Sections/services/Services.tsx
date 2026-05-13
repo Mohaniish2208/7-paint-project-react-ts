@@ -10,7 +10,7 @@ export default function Services() {
   return (
     <div className="services-container">
       <p className="services-label">Our Services</p>
-      <h2 className="services-header">Quality Painting for Every Space</h2>
+      <h2 className="services-heading">Quality Painting for Every Space</h2>
       <div className="service-bar">
         {services.map((service) => (
           <Link
