@@ -101,7 +101,7 @@ html {
 }
 
 .service-page-hero {
-  min-height: clamp(25rem, 70vh, 42rem);
+  min-height: clamp(10rem, 10vh, 20rem);
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -183,11 +183,25 @@ html {
 }
 
 .service-gallery-track img {
-  width: clamp(16rem, 34vw, 30rem);
-  aspect-ratio: 4 / 3;
+  width: clamp(20rem, 34vw, 35rem);
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 0.5rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.16);
+}
+
+.service-gallery-track img:hover {
+  animation: zoom-in 1s ease-in-out forwards;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
 }
 
 .service-gallery-empty {

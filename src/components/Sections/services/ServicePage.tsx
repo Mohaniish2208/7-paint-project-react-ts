@@ -41,6 +41,7 @@ export default function ServicePage() {
         <div className="service-page-hero-content">
           <p className="service-page-label">Our Services</p>
           <h1>{service.title}</h1>
+          <p>{service.description}</p>
           <a href="/quote" className="service-page-cta">
             Get a Free Quote
           </a>

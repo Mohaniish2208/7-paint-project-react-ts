@@ -4,6 +4,9 @@ export const services = [
     slug: "house-painting",
     icon: "/house.svg",
     image: "/service-thumbnails/house-painting.jpg",
+    description:
+      "Reliable interior and exterior painting for homes that need a cleaner, brighter, longer-lasting finish.",
+
     photos: [
       "/East House/IMG-20260507-WA0070.jpg",
       "/East House/IMG-20260507-WA0071.jpg",
@@ -17,6 +20,9 @@ export const services = [
     slug: "condos-and-apartments",
     icon: "/condos.svg",
     image: "/service-thumbnails/condos-and-apartments.png",
+    description:
+      "Clean, efficient painting for condos and apartments, with careful prep and minimal disruption to your space.",
+
     photos: [
       "/Toronto Downtown/IMG-20260507-WA0044.jpg",
       "/Toronto Downtown/IMG-20260507-WA0045.jpg",
@@ -50,6 +56,9 @@ export const services = [
     slug: "multi-unit-buildings",
     icon: "/multi-units.svg",
     image: "/service-thumbnails/multi-unit-buildings.jpg",
+    description:
+      "Professional painting for multi-unit properties, shared areas, rental suites, and building refresh projects.",
+
     photos: [
       "/Condo Central Toronto/IMG-20260507-WA0013.jpg",
       "/Condo Central Toronto/IMG-20260507-WA0014.jpg",
@@ -70,6 +79,9 @@ export const services = [
     slug: "realtor-listing",
     icon: "/realtor.svg",
     image: "/service-thumbnails/realtor-listing-refreshes.png",
+    description:
+      "Fast, polished paint refreshes that help listings photograph better and feel move-in ready for buyers.",
+
     photos: [
       "/Thornhill Condo/IMG-20260507-WA0003.jpg",
       "/Thornhill Condo/IMG-20260507-WA0004.jpg",
@@ -89,6 +101,9 @@ export const services = [
     slug: "commercial-projects",
     icon: "/commercial.svg",
     image: "/service-thumbnails/select-commercial-projects.png",
+    description:
+      "Detailed commercial painting for offices, restaurants, and selected business spaces that need a professional finish.",
+
     photos: [
       "/Moxie's Restaurant/IMG-20260507-WA0060.jpg",
       "/Moxie's Restaurant/IMG-20260507-WA0061.jpg",
@@ -109,6 +124,9 @@ export const services = [
     slug: "color-consulting",
     icon: "/colors.svg",
     image: "/service-thumbnails/free-colour-consulting.png",
+    description:
+      "Choosing the right colour can completely change how a space feels. Our free colour consulting helps clients narrow down paint options based on lighting, room size, existing finishes, furniture, and the mood they want to create. Whether the goal is warm and welcoming, clean and modern, or bold and memorable, we help make the choice easier before the first coat goes on.",
+
     photos: [],
   },
 ]
