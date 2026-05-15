@@ -1,4 +1,4 @@
-# Steve E. Height Painting Website
+# Eastern Painting Services - Website
 
 A responsive business website for a Toronto-based painting service, built with React, TypeScript, Vite, and CSS.
 
