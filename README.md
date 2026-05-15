@@ -1,75 +1,70 @@
-# React + TypeScript + Vite
+# Steve E. Height Painting Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive business website for a Toronto-based painting service, built with React, TypeScript, Vite, and CSS.
 
-Currently, two official plugins are available:
+This project presents a real-world local service business with a polished homepage, service pages, project galleries, FAQs, customer-focused messaging, and a quote/contact flow. It was created as part of my frontend development portfolio to show how I can build practical, market-ready websites with modern React tools.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Responsive homepage for desktop, tablet, and mobile screens
+- Service sections for residential, condo, multi-unit, realtor, commercial, and colour consulting work
+- Individual service pages with image galleries
+- Smooth page navigation with React Router
+- Animated hero section using GSAP
+- FAQ section to answer common customer questions
+- Quote/contact flow for customer inquiries
+- Reusable data structure for services and project images
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Tech Stack
 
-Note: This will impact Vite dev & build performances.
+- React
+- TypeScript
+- Vite
+- CSS
+- React Router
+- GSAP
+- Formspree
 
-## Expanding the ESLint configuration
+## What I Practiced
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Building a component-based React application
+- Organizing reusable service data
+- Creating responsive layouts with custom CSS
+- Designing a business-focused user experience
+- Using routing for service detail pages
+- Presenting real project imagery in a clean gallery format
+- Writing customer-friendly content for a service website
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Clone the repository:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/Mohaniish2208/7-paint-project-react-ts.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## Project Purpose
+
+The goal of this project was to create more than a basic landing page. I wanted to build a realistic frontend project that could represent an actual business online, communicate services clearly, and guide visitors toward requesting a quote.
+
+## Author
+
+Created by [Mohaniish2208](https://github.com/Mohaniish2208)
