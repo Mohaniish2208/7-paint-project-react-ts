@@ -9,7 +9,7 @@ export default function About() {
           <p className="name-story">From Saltwater to Paintbrush</p>
           <p className="story photo-space-1">
             I grew up in Nova Scotia near the Atlantic Ocean, working in the commercial fishing industry. Alongside fishing, I
-            found myself painting boats, something most people avoided, but I genuinely enjoyed it. Before long, other
+            found myself painting commercial fishing boats, something most people avoided, but I genuinely enjoyed it. Before long, other
             fishermen started calling me to help with their boats. That's where it all began. To this day, I still say
             I've got salt water in my veins.
             <span className="steve-image-section">
@@ -21,7 +21,7 @@ export default function About() {
         <div className="section ">
           <p className="name-story">Finding My Way to Toronto</p>
           <p className="story photo-space-2">
-            In the mid-80s, I moved to Toronto and explored different kinds of work, mostly in customer-facing roles.
+            In the mid-80s, I moved to Toronto and explored different kinds of work, mostly in customer-service roles.
             I've always enjoyed working with people, helping, talking, and being someone they can rely on. No matter
             what I tried, I kept coming back to painting. It's what stuck.
           </p>
@@ -41,7 +41,7 @@ export default function About() {
           <p className="story">
             As I worked with more homeowners, the conversations naturally went beyond just paint. Clients began asking
             about colors, finishes, and how everything would come together. That's when I started offering color
-            consulting as part of the service so you're not just getting a paint job, but a complete, confident result.
+            consulting as part of the service so you're not just getting a paint job, but also color consultation and suggestions on decorating.
           </p>
         </div>
 
