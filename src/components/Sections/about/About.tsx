@@ -8,7 +8,7 @@ export default function About() {
         <div className="section">
           <p className="name-story">From Saltwater to Paintbrush</p>
           <p className="story photo-space-1">
-            I grew up in Nova Scotia near the Atlantic, working in the commercial fishing industry. Alongside fishing, I
+            I grew up in Nova Scotia near the Atlantic Ocean, working in the commercial fishing industry. Alongside fishing, I
             found myself painting boats, something most people avoided, but I genuinely enjoyed it. Before long, other
             fishermen started calling me to help with their boats. That's where it all began. To this day, I still say
             I've got salt water in my veins.
