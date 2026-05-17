@@ -171,7 +171,6 @@ html {
 }
 
 .service-gallery-viewport {
-  overflow: hidden;
   width: 100%;
 }
 
@@ -188,20 +187,13 @@ html {
   object-fit: cover;
   border-radius: 0.5rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.16);
+  transition: transform 1s ease-in-out;
+  touch-action: manipulation;
 }
 
-.service-gallery-track img:hover {
-  animation: zoom-in 1s ease-in-out forwards;
-}
-
-@keyframes zoom-in {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.1);
-  }
+.service-gallery-track img:hover,
+.service-gallery-track img.is-active {
+  transform: scale(1.1);
 }
 
 .service-gallery-empty {

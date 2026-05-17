@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import { services } from "../constants/services"
-import { useEffect, useMemo, useRef } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import { gsap } from "gsap"
 import Footer from "../../Layouts/Footer"
 import "../../styles/footer.css"
@@ -9,6 +9,27 @@ export default function ServicePage() {
   const { serviceSlug } = useParams()
   const galleryTrackRef = useRef<HTMLDivElement | null>(null)
   const tweenRef = useRef<gsap.core.Tween | null>(null)
+  const [activePhotoIndex, setActivePhotoIndex] = useState<number | null>(null)
+  const resumeTimeoutRef = useRef<number | null>(null)
+
+  const pauseGallery = () => {
+    if (resumeTimeoutRef.current) {
+      window.clearTimeout(resumeTimeoutRef.current)
+    }
+
+    tweenRef.current?.pause()
+  }
+
+  const resumeGallery = () => {
+    if (resumeTimeoutRef.current) {
+      window.clearTimeout(resumeTimeoutRef.current)
+    }
+
+    resumeTimeoutRef.current = window.setTimeout(() => {
+      tweenRef.current?.resume()
+      setActivePhotoIndex(null)
+    }, 1000)
+  }
 
   const service = services.find((item) => item.slug === serviceSlug)
   const galleryPhotos = useMemo(() => (service ? [...service.photos, ...service.photos] : []), [service])
@@ -57,7 +78,28 @@ export default function ServicePage() {
               onMouseLeave={() => tweenRef.current?.resume()}
             >
               {galleryPhotos.map((photo, index) => (
-                <img key={`${photo}-${index}`} src={photo} alt={service.title} />
+                <img
+                  key={`${photo}-${index}`}
+                  src={photo}
+                  alt={service.title}
+                  className={activePhotoIndex === index ? "is-active" : ""}
+                  onPointerEnter={(event) => {
+                    if (event.pointerType === "mouse") {
+                      pauseGallery()
+                    }
+                  }}
+                  onPointerLeave={(event) => {
+                    if (event.pointerType === "mouse") {
+                      resumeGallery()
+                    }
+                  }}
+                  onPointerDown={() => {
+                    pauseGallery()
+                    setActivePhotoIndex(index)
+                  }}
+                  onPointerUp={resumeGallery}
+                  onPointerCancel={resumeGallery}
+                />
               ))}
             </div>
           </div>
