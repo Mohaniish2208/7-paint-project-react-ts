@@ -4,15 +4,12 @@
 }
 
 .main-container {
-  display: flex;
+  align-self: center;
   background: white;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  margin: 0;
+  justify-content: space-between;
   border-bottom: 1px solid #eee;
   gap: 1rem;
-  padding-right: 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -29,16 +26,16 @@
 }
 
 .nav-pages {
-  display: flex;
   flex-direction: row;
   align-items: center;
+  align-self: center;
   justify-content: center;
   gap: clamp(1rem 4vw 4rem);
-  padding-right: 4rem;
 }
 
 .mid-section {
   display: flex;
+  align-self: center;
   flex-direction: row;
   align-items: center;
   justify-content: center;
