@@ -34,8 +34,29 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: min(100%, 42rem);
+  width: min(100%, 75rem);
   margin-left: clamp(0rem, 5vw, 4rem);
+}
+
+.logo {
+  align-self: center;
+  height: 14rem;
+  width: 16rem;
+  margin-top: 1rem;
+  animation: glow 3s ease-in-out;
+  flex: 0 0 auto;
+}
+
+@keyframes glow {
+  from {
+    opacity: 0;
+    transform: scale(0.7) translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
 }
 
 .punch-line {
@@ -55,8 +76,8 @@ section {
 .for-you {
   font-family: var(--punch-font-for-you);
   font-style: italic;
+  align-self: flex-end;
   margin: 0;
-  color: #444;
   font-size: clamp(2.25rem, 8vw, 4rem);
   font-weight: 500;
   text-decoration: underline;

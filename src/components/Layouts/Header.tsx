@@ -6,8 +6,6 @@ export default function Header() {
 
   return (
     <div className="main-container">
-      <img className="logo" src="/painting-logo.svg" alt="logo" />
-
       <div className="nav-pages">
         <div className="mid-section">
           <a className="home" href="/#home">

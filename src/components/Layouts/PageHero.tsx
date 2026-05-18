@@ -18,6 +18,7 @@ export default function PageHero() {
 
   return (
     <div className="page-hero-container" ref={heroRef}>
+      <img className="logo" src="/painting-logo.svg" alt="logo" />
       <div className="punch-line-section">
         <p className="punch-line">Let us brighten things up</p>
         <p className="for-you">for you!</p>
