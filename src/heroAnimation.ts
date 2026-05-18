@@ -23,10 +23,6 @@ export default function HeroAnimation(hero: HTMLElement) {
     duration: 0.8,
     opacity: 0,
     ease: "power3.out",
-    scrollTrigger: {
-      trigger: trustBar,
-      start: "top 85%",
-    },
   })
 
   gsap.to(punchLineSection, {
