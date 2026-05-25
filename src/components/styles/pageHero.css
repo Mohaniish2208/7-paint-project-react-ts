@@ -40,8 +40,8 @@ section {
 
 .logo {
   align-self: center;
-  height: 10rem;
-  width: 10rem;
+  height: 15rem;
+  width: 15rem;
   animation: glow 3s ease-in-out;
   flex: 0 0 auto;
 }
@@ -61,10 +61,11 @@ section {
 .punch-line {
   font-family: var(--punch-font);
   font-weight: 700;
-  font-size: clamp(2.2rem, 9vw, 6rem);
+  font-size: clamp(2rem, 9vw, 5rem);
   background: linear-gradient(135deg, #8a2be2, #ffb703, #ff006e, #00f0ff, #a8ff00, #ff3d57);
   background-clip: text;
   -webkit-background-clip: text;
+  padding-left: 10%;
   color: transparent;
   text-align: left;
   width: min(100%, 90vw);
