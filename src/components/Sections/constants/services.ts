@@ -97,7 +97,7 @@ export const services = [
     ],
   },
   {
-    title: "Select Commercial Projects",
+    title: "Smaller Commercial Projects",
     slug: "commercial-projects",
     icon: "/commercial.svg",
     image: "/service-thumbnails/select-commercial-projects.png",
