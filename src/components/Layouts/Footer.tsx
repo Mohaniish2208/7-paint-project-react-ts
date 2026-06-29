@@ -17,8 +17,8 @@ export default function Footer() {
           <div className="contact-row">
             <strong className="business-email">Email </strong>
             <span>:</span>
-            <a className="business-email" href="mailto:seheight@gmail.com">
-              seheight@gmail.com
+            <a className="business-email" href="mailto:easternpaintingservices@hotmail.com">
+              easternpaintingservices@hotmail.com
             </a>
           </div>
 
