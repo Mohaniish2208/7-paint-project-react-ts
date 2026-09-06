@@ -58,7 +58,8 @@ export default function About() {
           <p className="name-story">The Best Part of the Job</p>
           <p className="story">
             At the end of the day, nothing beats seeing someone walk into their freshly finished space and smile. That
-            moment, that reaction is why I still love what I do.
+            moment, that reaction is why I still love what I do. Thank you for taking the time to get to know me. I’d
+            love the chance to get to know you and help create a space that feels like home. -Steve
           </p>
         </div>
       </div>
